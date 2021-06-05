@@ -1,0 +1,212 @@
+body{
+    background-color: #e63946;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vanish {
+    width: 80%;
+    height: 30px;
+    z-index: 999; 
+    position: fixed;
+    display: inline-flex;
+    transform: translateY(692px);
+}
+
+
+.accept
+{
+    transform: translateX(247px);
+    background-color: #a8dadc;
+    padding: 0px,0px,0px,0px;
+    border: solid black 0.1em;
+    border-radius: 0.7em;
+}
+
+.nav{
+    position: fixed;;
+    background-color: #f1faee;
+    width: 100%;
+    z-index: 1;
+;
+}
+h1 {
+    letter-spacing: 0.1em;
+    font-family: 'Anton', sans-serif;
+    transform: translateX(1em);
+}
+.cont{
+    position: relative;
+    bottom: -150px;
+    display: flex;
+    background-color: #a8dadc;
+    border-radius: 0.8em;
+    justify-content:space-between;
+    box-shadow: -2px 5px 8px 3px #3a3838;
+}
+
+.banner {
+    display: flex;
+    position: relative;
+    padding:2em;
+    justify-content: space-around;
+    width: 1100px;
+    height: 600px;
+}
+
+.img {
+    position:relative ;
+    padding-right: 0.5em;
+}
+
+.sec {
+    padding: 00.5em;
+}
+h6{
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-bottom: 0.5em;
+    color: #03045e;
+}
+.name {
+    margin-top: 0.2em;
+    font-size: 48px;
+    font-weight: bold;
+}
+.Introduction
+{
+    letter-spacing: 0.1em;
+    color: #023e8a;
+}
+.mail:before{
+    content: "\e818";
+}
+a {color: #f1faee;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gitb{
+    display: inline-block;
+    transition: all 0.55s;
+}
+.gitb:hover{
+        content: url(gitbl.png);
+        width: 45px;
+        height: 45px;
+        cursor: pointer;;
+}
+
+.insta{
+    width: 45px;
+    height: 45px;
+    transition: all 0.55s;
+}
+
+.insta:hover{
+    cursor: pointer;
+    content: url(icons/instac.png);
+}
+.linkd{
+    width: 45px;
+    height: 45px;
+    transition: all 0.7s;
+}
+
+.linkd:hover{
+    cursor: pointer;
+    content: url(icons/linkblu.png);
+}
+.twiter{
+    width: 45px;
+    height: 45px;
+    transition: all 0.7s;
+}
+
+.twitter:hover{
+    cursor: pointer;
+    content: url(icons/twitbl.png);
+    width: 48px;
+    height: 48px;
+}
+.contwo{
+    width: 100%;
+    background-color: #457b9d;
+    height: 600px;
+}
+.MyPage
+{
+    padding-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutcont{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h5,h4{
+    font-size: 45px;
+}
+.About{
+    display: inline-block;
+    font-size: 55px;
+    border-right: solid 2px #a8dadc;
+}
+
+.skillc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+
+.skills{
+    width: 100%;
+    font-size: 45px;
+    display: flex;
+    justify-content:center;
+}
+
+.skills span:nth-of-type(n)
+{
+    padding: 0.5em;
+    transition: all 1s;
+
+}
+.skills span:nth-of-type(n) :hover
+{
+    transform: translateY(-0.2em);
+    transition: all 1s;
+}
+
+.aboutmyself{
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.conthree{
+    background-color: #a8dadc;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.d1, .d2, .d3 {
+    width: 33.33333%;
+}
+
