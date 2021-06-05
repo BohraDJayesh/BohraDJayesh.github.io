@@ -4,6 +4,20 @@ body
     display: flex;
     justify-content: center;
 }
+
+.spanhover{
+    height: 12vh;
+    width: 12vh;
+    display: block;
+    z-index: 101;
+    background-color: #ffc2d4;
+    border-radius: 3vh;
+    border: #8650502e solid 0.2vh;
+    font: 1.3rem Inconsolata, monospace;
+    color: #602437;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 .terminal-container
 {
     display: flex;
