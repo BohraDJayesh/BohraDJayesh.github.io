@@ -139,11 +139,18 @@ cursor: pointer;
    */
   
    .book{
-    width: 78rem;
+    width: 34rem;
     height: 42rem;
     border: grey 2px;
     position: absolute;
-    top: 73rem;
+    top: 70rem;
+    display: flex;
+    justify-content: center;
+    background-color: #2AB7CA;
+    /* box-shadow: 13px 16px 30px -10px; */
+    border-radius: 0 3rem 3rem 0;
+    box-shadow: 1.2rem 0rem 2rem -2rem inset;
+
    }
    .book-container{
     height: 47em;
@@ -152,4 +159,20 @@ cursor: pointer;
     justify-content: center;
     flex-wrap: wrap-reverse;
     font-family: 'Baskervville', serif;
+}
+.book > div:nth-of-type(n)
+{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  /* padding: 2rem; */
+  
+}
+h1{
+  position: absolute;
+  top: 64rem;
+}
+.palat{
+  transform : rotate3d(0,1,0,180deg);
+  transition: 1.5s;
 }
