@@ -1,8 +1,9 @@
 body{
     /* display: flex;
 justify-content: center;  */
- background-color: #95d2e9;
+ background-color: #f7ede2;
  margin: 0%;
+ overflow-y: hidden;
 }
 .container-main{
 /* display: flex; */
@@ -14,6 +15,7 @@ z-index: -1;
     display: flex;
     width:100%;
     justify-content: center;
+    transform: translateY(-4em);
 }
 .navbar{
     display: flex;
@@ -43,6 +45,7 @@ text-transform: uppercase;
 text-decoration: none;
 line-height: 1em;
 font-family: sans-serif;
+cursor: pointer;
 }
 .Name{
     color: white;
@@ -68,4 +71,85 @@ font-family: sans-serif;
     font-size: 8em;
     color: white;
     font-weight: bolder;
+}
+
+.scrollbook{
+    display: inline-block;
+    transform: translate(47em,-18em);
+    padding: 1.5em 4em 1.5em 4em;
+    border-radius: 1.5em;
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-21em, 23em);
+  }
+  
+  #explore{
+    display: block;
+    width: 200px;
+    height: 52px;
+    line-height: 51px;
+    font-size: 19px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    cursor: pointer;
+}
+  
+  #explore span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  #explore:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: whitesmoke;
+    transition: all .35s;
+  }
+  
+  #explore:hover{
+    color: black;
+  }
+  
+  /* html {
+    scroll-behavior: smooth;
+  } */
+
+  #explore:hover:after{
+    width: 100%;
+  }
+  /* .explore
+  {
+    scroll-behavior: [ auto | smooth ];
+  }
+   */
+  
+   .book{
+    width: 78rem;
+    height: 42rem;
+    border: grey 2px;
+    position: absolute;
+    top: 73rem;
+   }
+   .book-container{
+    height: 47em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    font-family: 'Baskervville', serif;
 }
