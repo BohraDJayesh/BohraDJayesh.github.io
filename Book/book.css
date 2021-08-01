@@ -1,0 +1,85 @@
+.book{
+    width: 100rem;
+    height: 42rem;
+    border: grey 2px;
+    position: absolute;
+    top: 70rem;
+    display: flex;
+    justify-content: center;
+    /* background-color: #2AB7CA; */
+    /* box-shadow: 13px 16px 30px -10px; */
+    /* border-radius: 0 3rem 3rem 0;
+    box-shadow: 1.2rem 0rem 2rem -2rem inset; */
+    perspective: 350vw;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+    /* background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%); */
+    /* background: rgba(0, 0, 0, 0); */
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem gray);
+   }
+   .book-container{
+    height: 47em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    font-family: 'Baskervville', serif;
+    /* background: linear-gradient(#f7ede2, #E83F6F); */
+    background: no-repeat url(backcover.jpeg);
+  }
+
+h1{
+  position: absolute;
+  top: 64rem;
+}
+.palat{
+  transform-origin: left;
+  transform : rotateY(-180deg);
+  transition: 2s;
+}
+
+h1{
+  color: black;
+  font-weight: bolder;
+  filter: drop-shadow(0.2rem 0.1rem 0.2rem gray);
+}
+
+.page{
+  width: 26rem;
+  height: 42rem;
+  position: absolute;
+  /* padding: 2rem; */
+  background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
+  background: rgba(0, 0, 0, 0);
+  perspective: 350vw;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  background-color:#f2ede2;
+  /* border-radius: 0 3rem 3rem 0; */
+  box-shadow: 1.2rem 0rem 5rem -3rem inset;
+    transition: transform 1s;
+    background: no-repeat url(old-note2.png);
+  background-size: 26rem 42rem;
+  background-blend-mode: overlay;
+}
+.shift{
+  transform: translateX(17rem);
+  transition: 0.8s;
+}
+.page::before{
+  content: none;
+  height: 42rem;
+  width: 10rem;
+  box-shadow: 1.2rem 0rem 2rem -2rem;
+}
+.front-page{
+  background: no-repeat url(old-cover2.jpg);
+  /* background-size: cover; */
+  background-size: cover;
+  width: 26rem;
+  height: 42rem;
+  position: absolute;
+  perspective: 350vw;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}

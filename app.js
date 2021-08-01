@@ -17,9 +17,9 @@ document.querySelector('.Home').addEventListener('click',function(){
 
 let pages = document.querySelectorAll('.page');
 document.querySelector('.front-page').style.zIndex = `${pages.length+1}`;
-for(let i=0;i<pages.length;i++)
+for(let i=pages.length-1;i>=0;i--)
 {
-    pages[i].style.zIndex = `${pages.length - i}`;
+    pages[i].style.zIndex = i;
 }
 
 //Completed
@@ -31,9 +31,11 @@ let i=4,bookcount =0 ;
 document.querySelector('.book').addEventListener('click',function(){
 
     //If the click is first time the book gets shifted.
-
-    if(bookcount === 0)
+        $(".book").css("boxShadow", "none");    //removing box shadow because it's causing a bug and i don't know why...
+        $(".book").css("filter", "none");
+        if(bookcount === 0)
     {
+        document.querySelector('.book').classList.add('endofbook');
         document.querySelector('.book').classList.add('shift');
         document.querySelector('.front-page').classList.add('palat');
         let tout = 0;
@@ -56,6 +58,20 @@ document.querySelector('.book').addEventListener('click',function(){
 
     //else the pages shifts as designs.
 
+    else if(i === pages.length-1)
+    {
+        document.querySelector('.book').classList.remove('flip');
+        document.querySelector('.front-page').classList.remove('palat');
+
+        for(let j=0;j<pages.length;j++)
+        {
+            pages[j].classList.remove('palat');
+        }
+        document.querySelector('.book').classList.add('endofbook');
+        bookcount = 0;
+        i = 0;
+    }
+
     else {
     let page = pages[i];
     page.classList.add('palat');
@@ -66,4 +82,6 @@ document.querySelector('.book').addEventListener('click',function(){
           playAudio();
           i++;
     }
+
 })
+// pages[4].classList.add('page1');
