@@ -1,6 +1,7 @@
 //Scrolling to the next segment js.
 let navbar = document.querySelector('.navbar');
 let wind = document.querySelector('.Windows');
+let terminalcontainer = document.querySelector('.terminal-container');
 document.querySelector('#explore').addEventListener('click',function(){
 
 document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
@@ -116,3 +117,58 @@ wind.addEventListener('click',()=>{
         termicon.classList.remove('terminal-click');
     click=0;
 })
+let dbclickcount = 0;
+//Adding double clicking event
+wind.addEventListener('dblclick',()=>{
+    if(!dbclickcount){
+    dbclickcount++;
+    $('.terminal-container').show();
+    //Listening to the mouse when it's on hold
+terminalcontainer.addEventListener('mousedown', function(e) {
+    isDown = true;
+    offset = [
+        terminalcontainer.offsetLeft - e.clientX,
+        terminalcontainer.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown) {
+        mousePosition = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        terminalcontainer.style.left = (mousePosition.x + offset[0]) + 'px';
+        terminalcontainer.style.top  = (mousePosition.y + offset[1]) + 'px';
+    }
+}, true);
+//Moving with mouse completed
+    }
+    else{
+        alert("Already Running");
+    }
+})
+//Adding Terminal
+//Done/
+
+
+//Hiding the terminal as we want to open it when it's double clicked.
+
+$('.terminal-container').hide();
+
+//Adding the closing button of terminal
+
+let close = document.querySelector('.suspend');
+close.addEventListener('click',()=>{
+    $('.terminal-container').hide();
+    dbclickcount = 0;
+})
+//Done adding button.
+

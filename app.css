@@ -350,9 +350,120 @@ body {
   top: 4rem;
 left: 6rem;
 border-radius: 0.3rem;
-transition: all 0.4s;
+transition: all 0.2s;
 z-index: 20;
 }
 .terminal-click{
   background-color: #1c7dec;
+  transition: all 0.3s;
 }
+.terminaldiv::after{
+  content: '';
+
+
+}
+/* Terminal classes */
+.spanhover{
+  height: 12vh;
+  width: 12vh;
+  display: block;
+  z-index: 101;
+  background-color: #ffc2d4;
+  border-radius: 3vh;
+  border: #8650502e solid 0.2vh;
+  font: 1.3rem Inconsolata, monospace;
+  color: #602437;
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.terminal-container
+{
+  display: flex;
+  /* transform: translateY(8em); */
+  height: 23em;
+  width: 35em;
+  background-color: #3f3d3d;
+  justify-content: center;
+  z-index: 30;
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 6rem;
+  left: 16rem;
+}
+
+.terminal{
+  display: flex;
+  width: inherit;
+  height: inherit;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.task
+{   width: 100%;
+  height: 8px;
+  padding: 0.5em;
+  background-color: gray;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.taskbtn{
+  display: flex;
+  height: 17px;
+  justify-content: space-between;
+  width: 3.5rem;
+}
+
+.suspend
+{   padding: 1px;
+  display: inline-block;
+  background-color: #ff3e3e;
+  width: 12px;
+  height: 12px;
+  border-radius: 0.3em;
+}
+.expand
+{
+  padding: 1px;
+  padding-left: 2px;
+  display: inline-block;
+  background-color: #fcee2d;
+  width: 12px;
+  height: 12px;
+  border-radius: 0.3em;
+}
+
+.min{
+  padding: 1px;
+  display: inline-block;
+  background-color: #9fef00;
+  width: 12px;
+  height: 12px;
+  border-radius: 0.3em;
+}
+.space 
+{
+  width: 100%;
+  height: inherit;
+  font-family: monospace;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pointer
+{   margin-top: -1.5em;
+  margin-left: 0.5em;
+  display: inline-block;
+  background-color: white;
+  width: 0.6em;
+  height: 1.2em;
+  z-index: 1;
+  transform: translateY(0.2em);
+}
+p
+{
+  color: white;
+  font-weight: 900;
+  font-size: 1em;
+  height: 1.6em;
+}
+
+/* Terminal classes over */
