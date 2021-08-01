@@ -7,7 +7,7 @@ document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
 })
 document.querySelector('.Home').addEventListener('click',function(){
 
-    document.querySelector('.banner').scrollIntoView({behavior: 'smooth'});
+    document.querySelector('.banner').scrollIntoView({behavior: 'ease-out'});
 })
 
 //End of that segment
@@ -88,11 +88,14 @@ document.querySelector('.book').addEventListener('click',function(){
 //Adding animation of navbar going up if clicks on skillls
 let skills = document.querySelector('.Skills');
 skills.addEventListener('click',()=>{
-document.querySelector('.Windows').scrollIntoView({behavior:"smooth"});
+document.querySelector('.windows-container').scrollIntoView({behavior:"smooth"});
 navbar.classList.add('navswitch');
-});
+})
 let topbut = document.querySelector('.top');
 topbut.addEventListener('click',()=>{
     document.querySelector('.banner').scrollIntoView({behavior: 'smooth'});
     navbar.classList.remove('navswitch');
-});
+})  
+//Particle Background
+
+    //Complete

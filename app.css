@@ -1,9 +1,10 @@
 body{
     /* display: flex;
 justify-content: center;  */
- background-color: #f2ede2;
+ background-color: black;
  margin: 0%;
  /* overflow-y: hidden; */
+ overflow-x: hidden;
 }
 .container-main{
 /* display: flex; */
@@ -252,9 +253,22 @@ display: flex;
   top: 63rem;
   opacity: 0.5;
 }
-.Windows{
+.windows-container{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
   width: 100%;
   height: 58rem;
+  justify-content: center;
+
+}
+.Windows{
+  width: 65rem;
+  height: 52rem;
+  display: flex;
+  /* background-image: url(images/kali.png); */
+  position: absolute;
+  top: 117rem;
 }
 .navswitch{
   transform: translateY(-7rem);
@@ -265,11 +279,28 @@ display: flex;
   width: 6rem;
   height: 6rem;
   position: relative;
-  top: 47rem;
-  left: 103rem;
+  top: 45rem;
+  left: 74rem;
   z-index: 1;
   background-color: white;
   border-radius: 4rem;
   box-shadow: 0rem 0.9rem 2.2rem 0.2rem gray;
   cursor: pointer;
 }
+body {
+
+  background: #2a2148
+}
+
+.taskbar-container{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  position: relative;
+  left: -65rem;
+}
+
+.taskimg{
+  position: relative;
+}
+
