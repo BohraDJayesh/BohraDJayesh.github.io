@@ -48,6 +48,9 @@ text-decoration: none;
 line-height: 1em;
 font-family: sans-serif;
 cursor: pointer;
+flex-shrink: 0.5;
+display: inline-block;
+position: relative;
 }
 .Name{
     color: white;
@@ -58,6 +61,7 @@ cursor: pointer;
     font-size: 27px;
     letter-spacing: 0.11em;
     line-height: 1.2em;
+    position: relative;
 }
 .intro{
     width: 77em;
@@ -275,13 +279,14 @@ display: flex;
   transition: all 1s;
 }
 .top{
+  display: flex;
   display: inline-block;
   width: 6rem;
   height: 6rem;
   position: relative;
-  top: 45rem;
-  left: 74rem;
-  z-index: 1;
+  top: 40rem;
+  left: 45rem;
+  z-index: 10;
   background-color: white;
   border-radius: 4rem;
   box-shadow: 0rem 0.9rem 2.2rem 0.2rem gray;
@@ -303,4 +308,51 @@ body {
 .taskimg{
   position: relative;
 }
-
+/* .particles-js{
+  position: fixed;
+} */
+.arrow-left{
+  position: relative;
+  width: 0.35rem;
+  height: 2.5rem;
+  background-color: black;
+  display: block;
+  border-radius: 2rem;
+  transform: rotate(45deg);
+  left: 1.8rem;
+  top: 0.8rem;
+}
+.arrow-right{
+  position: relative;
+  width: 0.35rem;
+  height: 2.5rem;
+  background-color: black;
+  display: block;
+  border-radius: 2rem;
+  transform: rotate(131deg);
+  left: 3.4rem;
+  top: -1.75rem;
+}
+.arrow-down{
+  position: relative;
+  width: 0.35rem;
+  height: 3rem;
+  background-color: black;
+  display: block;
+  border-radius: 2rem;
+  left: 2.6rem;
+  top: -3.5rem;
+}
+.terminla-icon{
+  width: 5.4rem;
+  height: 3rem;
+  position: relative;
+  top: 4rem;
+left: 6rem;
+border-radius: 0.3rem;
+transition: all 0.4s;
+z-index: 20;
+}
+.terminal-click{
+  background-color: #1c7dec;
+}

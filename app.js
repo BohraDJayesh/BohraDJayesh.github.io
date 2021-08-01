@@ -4,6 +4,8 @@ let wind = document.querySelector('.Windows');
 document.querySelector('#explore').addEventListener('click',function(){
 
 document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
+
+
 })
 document.querySelector('.Home').addEventListener('click',function(){
 
@@ -99,3 +101,18 @@ topbut.addEventListener('click',()=>{
 //Particle Background
 
     //Complete
+
+//Adding effects when clicked on terminal
+let click = 0;
+let termicon = document.querySelector('.terminla-icon');
+termicon.addEventListener('click',()=>{
+    if(click==0)
+        termicon.classList.add('terminal-click');
+    click++;
+})
+//removing background when clicked somewhere else 
+wind.addEventListener('click',()=>{
+    if(!click)
+        termicon.classList.remove('terminal-click');
+    click=0;
+})
