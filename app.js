@@ -1,5 +1,6 @@
 //Scrolling to the next segment js.
-
+let navbar = document.querySelector('.navbar');
+let wind = document.querySelector('.Windows');
 document.querySelector('#explore').addEventListener('click',function(){
 
 document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
@@ -84,4 +85,14 @@ document.querySelector('.book').addEventListener('click',function(){
     }
 
 })
-// pages[4].classList.add('page1');
+//Adding animation of navbar going up if clicks on skillls
+let skills = document.querySelector('.Skills');
+skills.addEventListener('click',()=>{
+document.querySelector('.Windows').scrollIntoView({behavior:"smooth"});
+navbar.classList.add('navswitch');
+});
+let topbut = document.querySelector('.top');
+topbut.addEventListener('click',()=>{
+    document.querySelector('.banner').scrollIntoView({behavior: 'smooth'});
+    navbar.classList.remove('navswitch');
+});

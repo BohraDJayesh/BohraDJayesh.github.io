@@ -25,6 +25,7 @@ z-index: -1;
     z-index: 1000;
     justify-content: center;
     position: fixed;
+    transition: all 0.5s;
 }
 .navel{
     display: flex;
@@ -250,4 +251,25 @@ display: flex;
   position: absolute;
   top: 63rem;
   opacity: 0.5;
+}
+.Windows{
+  width: 100%;
+  height: 58rem;
+}
+.navswitch{
+  transform: translateY(-7rem);
+  transition: all 1s;
+}
+.top{
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  position: relative;
+  top: 47rem;
+  left: 103rem;
+  z-index: 1;
+  background-color: white;
+  border-radius: 4rem;
+  box-shadow: 0rem 0.9rem 2.2rem 0.2rem gray;
+  cursor: pointer;
 }
