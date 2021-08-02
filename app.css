@@ -79,14 +79,6 @@ position: relative;
     font-weight: bolder;
 }
 
-.scrollbook{
-    display: inline-block;
-    transform: translate(47em,-18em);
-    padding: 1.5em 4em 1.5em 4em;
-    border-radius: 1.5em;
-}
-
-
 .wrapper{
     position: absolute;
     top: 50%;
@@ -138,125 +130,18 @@ position: relative;
   #explore:hover:after{
     width: 100%;
   }
-  /* .explore
-  {
-    scroll-behavior: [ auto | smooth ];
-  }
-   */
-  
-   .book{
-    width: 100rem;
-    height: 42rem;
-    border: grey 2px;
-    position: absolute;
-    top: 70rem;
-    display: flex;
-    justify-content: center;
-    /* background-color: #2AB7CA; */
-    /* box-shadow: 13px 16px 30px -10px; */
-    /* border-radius: 0 3rem 3rem 0;
-    box-shadow: 1.2rem 0rem 2rem -2rem inset; */
-    perspective: 350vw;
-    transform-style: preserve-3d;
-    backface-visibility: visible;
-    /* background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%); */
-    /* background: rgba(0, 0, 0, 0); */
 
-   }
-   .book-container{
-     /* background: no-repeat url("images/wooden1.jpg"); */
-    height: 47em;
+   .tv-container{
+    height: 60em;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
     font-family: 'Baskervville', serif;
-    /* background: linear-gradient(#f7ede2, #E83F6F); */
+    background-color: #e33030;
   }
 
-h1{
-  color: white;
-  font-weight: bolder;
-  filter: drop-shadow(0.2rem 0.1rem 0.2rem gray);
-  font-size: 5rem;
-  font-family: 'Anton', sans-serif;
-  position: absolute;
-  top: 59rem;
-}
-.palat{
-  transform-origin: left;
-  transform : rotateY(-180deg);
-  transition: 2s;
-}
 
-.page{
-  width: 26rem;
-  height: 42rem;
-  position: absolute;
-  /* padding: 2rem; */
-  background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
-  background: rgba(0, 0, 0, 0);
-  perspective: 350vw;
-  transform-style: preserve-3d;
-  backface-visibility: visible;
-  background-color:#f2ede2;
-  /* border-radius: 0 3rem 3rem 0; */
-  box-shadow: 1.2rem 0rem 5rem -3rem inset;
-    transition: transform 1s;
-    background: no-repeat url(old-note2.png);
-  background-size: 26rem 42rem;
-  background-blend-mode: overlay;
-  display: flex;
-}
-.shift{
-  transform: translateX(43rem);
-  transition: 0.8s;
-}
-.page::before{
-  content: none;
-  height: 42rem;
-  width: 10rem;
-  box-shadow: 1.2rem 0rem 2rem -2rem;
-
-}
-.front-page{
-  background: no-repeat url(old-cover2.jpg);
-  /* background-size: cover; */
-  background-size: cover;
-  width: 26rem;
-  height: 42rem;
-  position: absolute;
-  perspective: 350vw;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-}
-.endofbook{
-  left: -20rem;
-}
-.fpage{
-  width: 100%;
-height: 100%;
-display: flex;
-}
-.mps{
-  position: absolute;
-      width: 21rem;
-    height: 14rem;
-    top: 4rem;
-    left: 2rem;
-    border-radius: 0.7rem;
-    rotate: 23deg;
-}
-.bookbg{
-  background-color: black;
-  width: 100%;
-  height: 51em;
-  /* height: inherit; */
-  /* z-index: 1; */
-  position: absolute;
-  top: 63rem;
-  opacity: 0.5;
-}
 .windows-container{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -264,9 +149,6 @@ display: flex;
   width: 100%;
   height: 58rem;
   justify-content: center;
-  /* background: repeat url(images/winbg.png); */
-  /* animation: mybg 5s infinite; */
-
 }
 
 .Windows{
@@ -275,7 +157,7 @@ display: flex;
   display: flex;
   /* background-image: url(images/kali.png); */
   position: absolute;
-  top: 117rem;    
+  top: 130rem;    
   filter: drop-shadow(-1rem 2rem 2rem black);
 }
 
@@ -314,41 +196,7 @@ body {
 .taskimg{
   position: relative;
 }
-/* .particles-js{
-  position: fixed;
-} */
-.arrow-left{
-  position: relative;
-  width: 0.35rem;
-  height: 2.5rem;
-  background-color: black;
-  display: block;
-  border-radius: 2rem;
-  transform: rotate(45deg);
-  left: 1.8rem;
-  top: 0.8rem;
-}
-.arrow-right{
-  position: relative;
-  width: 0.35rem;
-  height: 2.5rem;
-  background-color: black;
-  display: block;
-  border-radius: 2rem;
-  transform: rotate(131deg);
-  left: 3.4rem;
-  top: -1.75rem;
-}
-.arrow-down{
-  position: relative;
-  width: 0.35rem;
-  height: 3rem;
-  background-color: black;
-  display: block;
-  border-radius: 2rem;
-  left: 2.6rem;
-  top: -3.5rem;
-}
+
 .terminla-icon{
   width: 5.4rem;
   height: 3rem;
