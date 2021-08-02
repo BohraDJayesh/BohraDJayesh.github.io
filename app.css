@@ -264,16 +264,21 @@ display: flex;
   width: 100%;
   height: 58rem;
   justify-content: center;
+  /* background: repeat url(images/winbg.png); */
+  /* animation: mybg 5s infinite; */
 
 }
+
 .Windows{
   width: 65rem;
   height: 52rem;
   display: flex;
   /* background-image: url(images/kali.png); */
   position: absolute;
-  top: 117rem;
+  top: 117rem;    
+  filter: drop-shadow(-1rem 2rem 2rem black);
 }
+
 .navswitch{
   transform: translateY(-7rem);
   transition: all 1s;
@@ -287,10 +292,11 @@ display: flex;
   top: 40rem;
   left: 45rem;
   z-index: 10;
-  background-color: white;
+  background-color: #e33030;
   border-radius: 4rem;
   box-shadow: 0rem 0.9rem 2.2rem 0.2rem gray;
   cursor: pointer;
+  transition: all 0.2s;
 }
 body {
 
@@ -467,3 +473,12 @@ p
 }
 
 /* Terminal classes over */
+.top:active{
+  transform: scale(0.8);
+  transition: all 0.2s;
+}
+.toparrow{
+  position: relative;
+  left: 1.1rem;
+  top: -0.5rem;
+}

@@ -2,6 +2,8 @@
 let navbar = document.querySelector('.navbar');
 let wind = document.querySelector('.Windows');
 let terminalcontainer = document.querySelector('.terminal-container');
+let topbut = document.querySelector('.top');
+
 document.querySelector('#explore').addEventListener('click',function(){
 
 document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
@@ -10,7 +12,7 @@ document.querySelector('.book-container').scrollIntoView({behavior: 'smooth'});
 })
 document.querySelector('.Home').addEventListener('click',function(){
 
-    document.querySelector('.banner').scrollIntoView({behavior: 'ease-out'});
+    document.querySelector('.banner').scrollIntoView({behavior: 'smoooth'});
 })
 
 //End of that segment
@@ -94,7 +96,7 @@ skills.addEventListener('click',()=>{
 document.querySelector('.windows-container').scrollIntoView({behavior:"smooth"});
 navbar.classList.add('navswitch');
 })
-let topbut = document.querySelector('.top');
+//Clicking on top button
 topbut.addEventListener('click',()=>{
     document.querySelector('.banner').scrollIntoView({behavior: 'smooth'});
     navbar.classList.remove('navswitch');
@@ -119,10 +121,10 @@ wind.addEventListener('click',()=>{
 })
 let dbclickcount = 0;
 //Adding double clicking event
-wind.addEventListener('dblclick',()=>{
+termicon.addEventListener('dblclick',()=>{
     if(!dbclickcount){
     dbclickcount++;
-    $('.terminal-container').show();
+    $('.terminal-container').show("200");
     //Listening to the mouse when it's on hold
 terminalcontainer.addEventListener('mousedown', function(e) {
     isDown = true;
@@ -167,7 +169,7 @@ $('.terminal-container').hide();
 
 let close = document.querySelector('.suspend');
 close.addEventListener('click',()=>{
-    $('.terminal-container').hide();
+    $('.terminal-container').hide("200");
     dbclickcount = 0;
 })
 //Done adding button.
