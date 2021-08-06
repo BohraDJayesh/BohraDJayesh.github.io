@@ -323,3 +323,13 @@ p
 /* visibility: hidden; */
 position: absolute;
 }
+#graph-container{
+  width: 100rem;
+  height: 50rem;
+  background-color: #88819d;
+  z-index: 10;
+  position: absolute;
+  top: 131rem;
+  left: 13rem;
+  border-radius: 0.5rem;
+}

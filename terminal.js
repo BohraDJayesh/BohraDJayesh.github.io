@@ -1,19 +1,7 @@
-//Data for chart graph
-let data = {
-    header: ["Jayesh", "Skills "],
-    rows: [
-      ["HTML", 1500],
-      ["CSS", 87000],
-      ["Javascript", 175000],
-      ["Python", 10000],
-      ["C", 25000],
-      ["C++", 25000],
-      ["Iran (1990)", 50000]
-  ]}
+$('#graph-container').hide();
 //
-
 //Making the blinking pointer..
-let commandlist = ["ls","clear","mousepad skills.txt","ls -a"];
+let commandlist = ["ls","clear","mousepad skills.txt","ls -a","wget resume.pdf"];
 let pointer = $('.pointer');
 const wait=ms=>new Promise(resolve => setTimeout(resolve, ms));
 let blinker= function(pointer)
@@ -49,7 +37,7 @@ inputterminal.on('keyup',function(e){
     let value = e.key;
     console.log(e.keyCode);
     let span = document.createElement('span');
-    if((e.keyCode>=65 && e.keyCode<=90)||(e.keyCode==173)||e.keyCode==190)  //Meaning if it's an alphabet or special symbol
+    if((e.keyCode>=65 && e.keyCode<=90)||(e.keyCode==173)||e.keyCode==190||e.keyCode==59||e.keyCode==191)  //Meaning if it's an alphabet or special symbol
     {
     span.innerText = `${value}`;
     span.classList.add(`span${spancount}`);
@@ -111,13 +99,48 @@ inputterminal.on('keyup',function(e){
             inputcommand = "";
         }
 
+        else if(inputcommand == commandlist[2])
+        {
+            $('#graph-container').show("slow"); 
+            setTimeout(function(){
+            let chart = new CanvasJS.Chart("graph-container",{
+                animationEnabled: true,
+                title:{
+                    text:"Skills of Jayesh Dutt Bohra"
+                },
+                axisX:{
+                    interval:1
+                },
+                axisY2:{
+                    interlacedColor: "rgb(1,77,101,0.2)",
+                    gridColor:"rgba(1,77,101,0.1)",
+                    title:"Diffrent Skills"
+                },
+                data:[{
+                    type:"bar",
+                    name:"skills",
+                    color:"#27a47b",
+                    dataPoints:[
+                        { y: 10, label: "HTML" },
+                        { y: 7, label: "CSS" },
+                        { y: 8, label: "Javascript" },
+                        { y: 6, label: "C" },
+                        { y: 6, label: "C++" },
+                        { y: 5, label: "Python" },
+                        { y: 7, label: "Illustrator" },
+                        { y: 0, }
+                    ]
+                }]
+            });
+            chart.render();
+        },800);
+        $('#graph-container').on('click',()=>{
+            $("#graph-container").hide("slow");
+        })
+        }
         else if(inputcommand == commandlist[4])
         {
-            let chart = anychart.bar();
-            chart.data(data);
-            chart.title("Skills Of Jayesh Dutt Bohra");
-            chart.container('space');
-            chart.draw();
+            document.querySelector('#resume').click();
         }
 
         if(!clear)
