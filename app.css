@@ -287,8 +287,8 @@ z-index: 20;
   width: 100%;
   height: inherit;
   font-family: monospace;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   cursor: text;
 }
 .pointer
