@@ -3,6 +3,7 @@ let navbar = document.querySelector('.navbar');
 let wind = document.querySelector('.Windows');
 let terminalcontainer = document.querySelector('.terminal-container');
 let topbut = document.querySelector('.top');
+let taskbar = document.querySelector('.task');
 
 document.querySelector('#explore').addEventListener('click',function(){
 
@@ -45,13 +46,14 @@ wind.addEventListener('click',()=>{
     click=0;
 })
 let dbclickcount = 0;
+let isDown;
 //Adding double clicking event
 termicon.addEventListener('dblclick',()=>{
     if(!dbclickcount){
     dbclickcount++;
     $('.terminal-container').show("200");
     //Listening to the mouse when it's on hold
-terminalcontainer.addEventListener('mousedown', function(e) {
+taskbar.addEventListener('mousedown', function(e) {
     isDown = true;
     offset = [
         terminalcontainer.offsetLeft - e.clientX,
