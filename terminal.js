@@ -93,7 +93,7 @@ inputterminal.on('keyup',function(e){
             para.innerText = "themaxfort@JayeshDB:~$";
             space.appendChild(para);
             let span = document.createElement('span');
-            span.innerHTML = " Contactme.deb .Skills.txt";
+            span.innerHTML = " Contactme.deb .skills.txt";
             para.appendChild(span);
             pointer.appendTo(para);
             inputcommand = "";
