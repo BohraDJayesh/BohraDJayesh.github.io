@@ -43,52 +43,85 @@ function hexresize() //function to resize hexagons calling itself at particular 
 //     });
 
 
-setInterval(() => { //the center one
-    // let randno = Math.floor((Math.random() * 317) + 1);
-setTimeout(() => {$(".insidehex159").css("background-color","#a9e5bb")},200);
-setTimeout(() => {$(".insidehex159").css("background-color","#FCF6B1")},300)
-setTimeout(() => {$(".insidehex159").css("background-color","#F7B32B")},600)
-setTimeout(() => {$(".insidehex159").css("background-color","#FF4365")},900)
-setTimeout(() => {$(".insidehex159").css("background-color","whitesmoke")},1200)   
-}, 5000);
+// setInterval(() => { //the center one
+//     // let randno = Math.floor((Math.random() * 317) + 1);
+// setTimeout(() => {$(".insidehex159").css("background-color","#a9e5bb")},200);
+// setTimeout(() => {$(".insidehex159").css("background-color","#FCF6B1")},300)
+// setTimeout(() => {$(".insidehex159").css("background-color","#F7B32B")},600)
+// setTimeout(() => {$(".insidehex159").css("background-color","#FF4365")},900)
+// setTimeout(() => {$(".insidehex159").css("background-color","whitesmoke")},1200)   
+// }, 5000);
 
 
-setInterval(()=>{
-    setTimeout(() => {$(".insidehex160").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex160").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex160").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex160").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex160").css("background-color","whitesmoke")},1200)  
+// setInterval(()=>{
+//     setTimeout(() => {$(".insidehex160").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex160").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex160").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex160").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex160").css("background-color","whitesmoke")},1200)  
 
-    setTimeout(() => {$(".insidehex158").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex158").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex158").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex158").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex158").css("background-color","whitesmoke")},1200)  
+//     setTimeout(() => {$(".insidehex158").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex158").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex158").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex158").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex158").css("background-color","whitesmoke")},1200)  
 
-    setTimeout(() => {$(".insidehex135").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex135").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex135").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex135").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex135").css("background-color","whitesmoke")},1200)  
+//     setTimeout(() => {$(".insidehex135").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex135").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex135").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex135").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex135").css("background-color","whitesmoke")},1200)  
 
-    setTimeout(() => {$(".insidehex134").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex134").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex134").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex134").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex134").css("background-color","whitesmoke")},1200)  
+//     setTimeout(() => {$(".insidehex134").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex134").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex134").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex134").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex134").css("background-color","whitesmoke")},1200)  
 
-    setTimeout(() => {$(".insidehex183").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex183").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex183").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex183").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex183").css("background-color","whitesmoke")},1200)  
+//     setTimeout(() => {$(".insidehex183").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex183").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex183").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex183").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex183").css("background-color","whitesmoke")},1200)  
 
-    setTimeout(() => {$(".insidehex184").css("background-color","#a9e5bb")},200);
-    setTimeout(() => {$(".insidehex184").css("background-color","#FCF6B1")},300)
-    setTimeout(() => {$(".insidehex184").css("background-color","#F7B32B")},600)
-    setTimeout(() => {$(".insidehex184").css("background-color","#FF4365")},900)
-    setTimeout(() => {$(".insidehex184").css("background-color","whitesmoke")},1200)  
+//     setTimeout(() => {$(".insidehex184").css("background-color","#a9e5bb")},200);
+//     setTimeout(() => {$(".insidehex184").css("background-color","#FCF6B1")},300)
+//     setTimeout(() => {$(".insidehex184").css("background-color","#F7B32B")},600)
+//     setTimeout(() => {$(".insidehex184").css("background-color","#FF4365")},900)
+//     setTimeout(() => {$(".insidehex184").css("background-color","whitesmoke")},1200)  
 
-},6250)
+// },6250)
 
+let colorrgb = ()=>{
+    let randno = Math.floor((Math.random() * 317) + 1);
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#a9e5bb")},200);
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#FCF6B1")},300)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#F7B32B")},600)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#FF4365")},900)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","whitesmoke")},1200)
+}
+
+let colorrgb2 = ()=>{
+    let randno = Math.floor((Math.random() * 317) + 1);
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#F6EB14")},200);
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#FF9526")},300)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#EF4423")},600)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","#2A3492")},900)
+    setTimeout(() => {$(`.insidehex${randno}`).css("background-color","whitesmoke")},1200)
+}
+
+setInterval(() => {
+    colorrgb2();
+}, 10);
+
+setInterval(() => {
+    colorrgb2();
+}, 10);
+
+setInterval(() => {
+    colorrgb2();
+}, 10);
+
+setInterval(() => {
+    colorrgb2();
+}, 10);
