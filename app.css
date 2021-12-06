@@ -15,6 +15,7 @@ display:flex;
 
 .container {
 font-size: 0; /*disable white space between inline block element */
+transition: all 1s;
 }
 
 .container .hexdiv {
@@ -27,7 +28,7 @@ clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 background: #3a3737;
 margin-bottom: calc(2px - 71px*0.2885); 
 box-shadow: 0 0 10px rgba(0,0,0,0.8); 
-transition: all 0.5s;
+transition: all 1s;
 }
 /* .container :nth-child(odd) {
 background:whitesmoke;
@@ -44,20 +45,39 @@ shape-outside: repeating-linear-gradient(
 .hexdiv
 {
     /* display: flex !important; */
-    align-items: center;
-    background: black !important;
+    /* align-items: center; */
+    vertical-align: middle;
+    background: #3a3737 ;
+    transition: all 1s;
 }
 .insidehex
 {
-    background: whitesmoke !important;
+    background: whitesmoke ;
     width: 71px;
 margin: 2px;
+vertical-align: middle;
 height: calc(71px*1.1841); 
 font-size:initial;
 clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 background: whitesmoke;
 margin-bottom: calc(2px - 71px*0.2885); 
 box-shadow: 0 0 10px rgba(0,0,0,0.8); 
-transition: all 0.5s;
+transition: all 1s;
 }
 
+.col1
+{
+    background-color: #a9e5bb;
+}
+.col2
+{
+    background-color: #FCF6B1;
+}
+.col3
+{
+    background-color: #F7B32B;
+}
+.col4
+{
+    background-color: #FF4365;
+}
