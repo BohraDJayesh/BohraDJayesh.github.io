@@ -114,3 +114,16 @@ transition: all 1s;
     color: hsl(318, 100%, 51%); /* pink */ 
     text-shadow: -2px -3px hsl(53, 100%, 81%) /* yellow */, 5px 5px hsl(240, 90%, 61%); /* blue */
   }
+.title 
+{
+    position: relative;
+    top: 0em;
+    left: -1.5em;
+}
+.subtitle
+{
+    position: relative;
+    top: -3.5em;
+    left: 9em;
+    font-size: 3vw;
+}
