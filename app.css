@@ -81,3 +81,34 @@ transition: all 1s;
 {
     background-color: #FF4365;
 }
+
+.p2pgame
+{
+    /* font-family: 'Press Start 2P', cursive; */
+    position: absolute;
+    top: 0em;
+    font-size: 4vw;
+    left: 7em;
+    
+}
+.metal {
+    /* ... */ 
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px hsl(200, 65%, 80%);
+  }
+  .raise {
+    filter: drop-shadow(1px 3px 0px hsl(242, 54%, 10%))
+      drop-shadow(1px 3px 0px hsl(242, 54%, 15%))
+      drop-shadow(1px 3px 0px hsl(242, 54%, 20%))
+      drop-shadow(1px 3px 0px hsl(242, 54%, 25%))
+      drop-shadow(1px 3px 0px hsl(242, 54%, 30%))
+      drop-shadow(0px 0px 10px rgba(16, 16, 16, 0.4));
+  }
+  .subtitle {
+    /* ... */
+    transform: rotateZ(-10deg);
+    color: hsl(318, 100%, 51%); /* pink */ 
+    text-shadow: -2px -3px hsl(53, 100%, 81%) /* yellow */, 5px 5px hsl(240, 90%, 61%); /* blue */
+  }
