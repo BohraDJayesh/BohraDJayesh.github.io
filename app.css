@@ -93,9 +93,11 @@ transition: all 1s;
 }
 .metal {
     /* ... */ 
+
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
     color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-text-fill-color : transparent;
     -webkit-text-stroke: 2px hsl(200, 65%, 80%);
   }
   .raise {
